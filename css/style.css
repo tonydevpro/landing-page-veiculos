@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    max-width: 30%;
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    
+}
+nav li{
+    list-style: none;
+    margin-right: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.bg{
+    background-image: url(/img/bg.jpg);
+    background-color: black;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 85vh;
+}
+.servicos{
+    color: white;
+    height: 100%;
+    max-width: max-content;
+    padding: 5%;
+}
+.servicos h1{
+    font-style: italic;
+    background-color: red;
+    margin: 10% 0;
+    padding: 5% 10%;
+}
+#email{
+    background-color: white;
+    width: 100%;
+    color: black;
+    font-size: large;
+}
+#consultoria{
+    width: 100%;
+}
+#compra{
+    width: 65%;
+}
+#venda{
+    width: 50%;
+}
+.destaque{
+    height: 90vh;
+    margin-bottom: 10%;
+    
+}
+.linha{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    
+}
+
+.textoDestaque{
+    text-align: center;
+    height: 25%;
+    align-content: center;
+    font-style: italic;
+    position: relative;  
+}
+.textoDestaque h1{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    padding: 1%;
+}
+.imgVeiculo{
+    
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+}
+.imgVeiculo img{
+    max-width: 100%;
+    min-width: 100%;
+    height: inherit;    
+}
+.veiculosDestaque{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3%;
+    gap: 2%;
+
+}
+.descricaoVeiculo p{
+    color: rgb(100, 100, 100);
+    margin: 2% 0;
+}
+.descricaoVeiculo button{
+    background-color: red;
+    padding: 5% 10%;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+}
+.ser-dep{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: cente;
+    color: white;
+}
+.servicosDepo{
+    background-color: rgba(0, 0, 0, 0.925);
+    align-content: center;
+    padding: 0 25%;
+
+}
+.depoimentos{
+    background-color: red;
+    align-content: center;
+    padding: 0 20%;
+}
+.servic{
+    display: flex;
+
+}
+.ser-dep h2{
+    margin-bottom: 6%;
+
+}
+.depoimentos h5{
+    color: black;
+    text-align: end;
+    margin-top: 5%;
+}
+.servic button{
+    background-color: red;
+    border: none;
+    color: white;
+    margin-top: 16%;
+    margin-left: 8%;
+    padding: 0 2%;
+    font-size: large;   
+}
+.contato{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+.titleContato{
+    height: 35%;
+    text-align: center;
+    align-content: center;
+}
+.titleContato .linha{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    top: 25%;
+    
+}
+.titleContato h1{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    padding: 1%;
+    font-style: italic;
+    
+}
+form{
+    width: 100%;
+    text-align: center;
+}
+form input{
+    width: 75%;
+    margin: 1%;
+    height: 40px;
+}
+.form input{
+    width: 36%;
+    
+
+}
+form textarea{
+    width: 75%;
+    margin: 1%;
+}
+form button{
+    background-color: red;
+    padding: 2% 10%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    height: 20vh;
+    background-color: black;
+    margin-top: 5%;
+    align-content: center;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+footer nav {
+    margin-left: 5% ;
+}
+footer nav a{
+    color: white;
+
+}
+@media (max-width:1000px){
+    .logo img{
+        min-width: 80%;
+    }
+    .bg{
+        
+        height: 30vh;
+    }
+    .servicos h1{
+        padding: 0;
+    }
+    .veiculosDestaque{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+    .veiculoDestaque1{
+        flex: 0 0 80%;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    }
+    .imgVeiculo{
+        height: 200px;
+    }
+    .destaque {
+        height: 50vh;
+    }
+    .descricaoVeiculo {
+        text-align: center;
+        padding: 10px;
+    }   
+    .ser-dep{
+        display: block;
+        
+    }
+    .servicosDepo{
+        height: 50%;
+    }
+    .depoimentos{
+        height: 50%;
+    }
+}
+@media (max-width:450px){
+    .logo img{
+        min-width: 100%;
+    }
+    .destaque{
+        padding-bottom: 15%;
+    }
+    .container{
+        display: block;
+        text-align: center;
+    }
+    .container nav{
+        justify-items: center;
+        margin-bottom: 2%;
+    }
+    
+}

@@ -1,0 +1,69 @@
+.venda{
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.filtro{
+    width: 30%;
+
+}
+.filtroTodo{
+    background-color: white;
+   /* padding: 10px;*/
+    margin: 0 2%;
+    border-radius: 10px;
+    border: #f4f4f4 2px solid;
+}
+.filtroCinza{
+    width: 30%;
+    height: 20px;
+    border-radius: 10px;
+    text-align: -webkit-right;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200))
+}
+.filtrobt{
+    height: 110%;
+    width: 20%;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
+    border: 1px solid #777;
+}
+.preco{
+    display: flex;
+    justify-content: space-between;
+    margin: 1px 10px;
+}
+.filtrePreco h1{
+    margin: 2%;
+}
+.filtreAno h1{
+    margin: 2%;
+}
+.filtreAnoOpcoes{
+    display: flex;
+    margin: 2%;
+}
+.filtreAnoOpcoes input{
+    margin-right: 2%;
+}
+.carrosVenda{
+    width: 70%;
+    
+    overflow-y: auto;
+}
+@media (max-width:1000px){
+    .veiculosDestaque{
+        display: block;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+    .veiculoDestaque1{
+        flex: 0 0 80%;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    }
+}
